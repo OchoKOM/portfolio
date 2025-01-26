@@ -51,11 +51,18 @@ header {
     align-items: center;
     gap: 1em;
 }
+header img{
+    border-radius: 50%;
+}
 nav {
     background-color: #444;
     color: #fff;
     padding: 15px;
     text-align: center;
+}
+a{
+    word-break: break-all;
+    max-width: 100%;
 }
 nav a {
     color: #fff;
@@ -98,6 +105,65 @@ form{
     display: flex;
     flex-direction: column;
 }
+a{
+    text-decoration: none;
+}
+.socials {
+    padding-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  /* justify-content: center; */
+}
+.socials .user-btn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .2em;
+  border: none;
+  outline: transparent;
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  transition: 150ms ease-in-out;
+  cursor: pointer;
+  color: #f4faff;
+}
+.user-btn.portfolio {
+  background: #f4faff;
+  color: #06acfb;
+}
+.user-btn.youtube {
+  background: #f03;
+}
+.user-btn.github {
+  background: #24292f;
+}
+.user-btn.facebook {
+  background: #0266ff;
+}
+.user-btn .icon {
+  max-width: 70%;
+  max-height: 70%;
+  width: max-content;
+  position: relative;
+  aspect-ratio: 1;
+  top: 0;
+  left: 0;
+}
+.user-btn .icon svg {
+  width: 100%;
+  height: 100%;
+}
+.user-btn .text {
+  transition: 150ms ease-in-out;
+}
+.socials .user-btn {
+  border-radius: 2rem;
+  width: 7rem;
+  max-width: 100%;
+}
 footer {
     background-color: #333;
     color: #fff;
@@ -116,6 +182,7 @@ footer nav *{
 }
 footer ul {
     display: flex;
+    flex-wrap: wrap;
     gap: 1em;
 }
 footer li {
